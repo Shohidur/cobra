@@ -1,0 +1,23 @@
+{
+    "name": "shohidur/support",
+    "description": "",
+    "authors": [
+        {
+            "name": "Md Sahidur Rahman",
+            "email": "sohidurr49@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Support\\": ""
+        }
+    }
+}

@@ -209,10 +209,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'shohidur',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Md Sahidur Rahman',
+            'email' => 'sohidurr49@gmail.com',
         ],
     ],
 

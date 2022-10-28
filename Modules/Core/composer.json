@@ -1,0 +1,23 @@
+{
+    "name": "shohidur/core",
+    "description": "",
+    "authors": [
+        {
+            "name": "Md Sahidur Rahman",
+            "email": "sohidurr49@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Core\\": ""
+        }
+    }
+}
