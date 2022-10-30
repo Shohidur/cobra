@@ -3,7 +3,7 @@
     return [
         'css' => [
             'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback',            
-            '"plugins/fontawesome-free/css/all.min.css',            
+            __DIR__.'../plugins/fontawesome-free/css/all.min.css',            
             'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',            
             'plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css',
             'plugins/icheck-bootstrap/icheck-bootstrap.min.css',            
@@ -29,7 +29,7 @@
             'plugins/summernote/summernote-bs4.min.js',
             'plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js',
             'dist/js/adminlte.js',
-            'dist/js/demo.js',
+            // 'dist/js/demo.js',
             'dist/js/pages/dashboard.js',
         ]
     ]

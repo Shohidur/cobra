@@ -26,6 +26,7 @@ class AdminServiceProvider extends ServiceProvider
     {
         $this->registerTranslations();
         $this->registerConfig();
+        $this->registerAssets();
         $this->registerViews();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
     }
@@ -52,6 +53,22 @@ class AdminServiceProvider extends ServiceProvider
         ], 'config');
         $this->mergeConfigFrom(
             module_path($this->moduleName, 'Config/config.php'), $this->moduleNameLower
+        );
+    }
+
+    /**
+     * Register config.
+     *
+     * @return void
+     */
+    protected function registerAssets()
+    {
+        // $this->publishes([
+        //     module_path($this->moduleName, 'Config/assets.php') => config_path($this->moduleNameLower . '.php'),
+        // ], 'config');
+
+        $this->mergeConfigFrom(
+            module_path("$this->moduleName", 'Config/assets.php'), 'assets'
         );
     }
 
@@ -107,6 +124,7 @@ class AdminServiceProvider extends ServiceProvider
                 $paths[] = $path . '/modules/' . $this->moduleNameLower;
             }
         }
+
         return $paths;
     }
 }

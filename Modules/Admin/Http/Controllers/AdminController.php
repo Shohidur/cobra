@@ -8,16 +8,17 @@ use Illuminate\Routing\Controller;
 
 class AdminController extends Controller
 {
+    protected $data = [];
+
     /**
      * Display a listing of the resource.
      * @return Renderable
      */
     public function index()
     {
-        print_r("<pre>");
-        print_r(setting()->settings);die();
-
-        return view('admin::index');
+        // print_r('<pre>');
+        // print_r(config('assets'));die();
+        return view('admin::index', $this->data);
     }
 
     /**
