@@ -5,7 +5,6 @@ namespace Modules\Core\Providers;
 use Modules\Setting\Entities\Setting;
 use Modules\Setting\SettingRepository;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Database\Eloquent\Factory;
 
 class CoreServiceProvider extends ServiceProvider
 {
@@ -36,7 +35,7 @@ class CoreServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register(RouteServiceProvider::class);
+        //
     }
 
     /**
